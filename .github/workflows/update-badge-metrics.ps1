@@ -5,7 +5,7 @@ param(
 $agentsPath = Join-Path $RepoRoot ".github\agents"
 $skillsPath = Join-Path $RepoRoot ".github\skills"
 $promptsPath = Join-Path $RepoRoot ".github\prompts"
-$outputPath = Join-Path $RepoRoot ".github\workflows\metrics.json"
+$outputPath = Join-Path $RepoRoot "metrics.json"
 
 function Get-FileCount {
 	param(
@@ -25,7 +25,6 @@ $metrics = [ordered]@{
 	agents = Get-FileCount -Path $agentsPath -Filter "*.agent.md"
 	skills = Get-FileCount -Path $skillsPath -Filter "SKILL.md" -Recurse
 	prompts = Get-FileCount -Path $promptsPath -Filter "*.prompt.md"
-	updatedAtUtc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
 }
 
 $json = ($metrics | ConvertTo-Json) + [Environment]::NewLine
