@@ -31,7 +31,6 @@ When stopping, report:
 
 When finished successfully, report:
 - current branch
-- whether a commit was created
+- whether a commit was created and by whom (git config user.email)
 - the commit message used, if any
 - whether pull and push both completed
-
