@@ -29,8 +29,6 @@ When stopping, report:
 - the command or operation that stopped
 - that the user must resolve it manually before retrying
 
-When finished successfully, report:
-- current branch
-- whether a commit was created and by whom (git config user.email)
-- the commit message used, if any
+When finished successfully, report in brief:
+- whether a commit of which branch was created and by whom (git config user.email) with what message, if any
 - whether pull and push both completed
