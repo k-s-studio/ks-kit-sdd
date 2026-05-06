@@ -24,7 +24,7 @@ Do this:
 
 When stopping or finished successfully, report
 - result: `stopped` or `success`
-- `new commit in branch {branch name} with message {commit message} by {git config user.email}`
+- `new commit in branch `{branch name}` with message `{commit message}` by {git config user.email}`
   or `no commit created`
 - whether pull and push both completed, or the user must resolve it manually before retrying
 - the command or operation that stopped (if stopped)
