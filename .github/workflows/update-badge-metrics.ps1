@@ -5,7 +5,7 @@ param(
 $agentsPath = Join-Path $RepoRoot ".github\agents"
 $skillsPath = Join-Path $RepoRoot ".github\skills"
 $promptsPath = Join-Path $RepoRoot ".github\prompts"
-$outputPath = Join-Path $RepoRoot ".github\badges\metrics.json"
+$outputPath = Join-Path $RepoRoot ".github\workflows\metrics.json"
 
 function Get-FileCount {
 	param(
