@@ -22,13 +22,9 @@ Do this:
 - Do not auto-resolve conflicts.
 - If pull or push hits a conflict, pause for manual resolution, or requires user auth/policy input, stop immediately.
 
-When stopping, report:
-- current branch
-- whether a commit was created
-- the commit message used, if any
-- the command or operation that stopped
-- that the user must resolve it manually before retrying
-
-When finished successfully, report in brief:
-- whether a commit of which branch was created and by whom (git config user.email) with what message, if any
-- whether pull and push both completed
+When stopping or finished successfully, report
+- result: `stopped` or `success`
+- `new commit in branch {branch name} with message {commit message} by {git config user.email}`
+  or `no commit created`
+- whether pull and push both completed, or the user must resolve it manually before retrying
+- the command or operation that stopped (if stopped)
