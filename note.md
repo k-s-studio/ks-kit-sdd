@@ -13,3 +13,4 @@
 	- 記下分支剛建立時的資料庫是在哪個Migration
 
 兩種之間怎麼同步? 是 /agent 能共用，還是用一個 claude agent 專門改寫導入? 未來以哪邊為優先?
+所以插件式就沒有 command 資料夾了嗎 那skill和prompt差在哪 怎麼這麼隨便...
