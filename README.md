@@ -21,3 +21,12 @@ git clone https://github.com/k-s-studio/ks-kit-sdd.git
 Add `ks-kit-sdd` into your project workspace as an extra folder, so the repo-local agents, skills, prompts, and notes are available alongside your working project.
 
 If you use a multi-root VS Code workspace, open your main project first and then add this repository as another workspace folder.
+
+## Problem-shooting
+Make sure there are configured in vs code settings (ctrl+,):
+```
+Chat: Agent Files Locations
+Chat: Agent Skills Locations
+Chat: Instructions Files Locations
+Chat: Use Agent Skills
+```
