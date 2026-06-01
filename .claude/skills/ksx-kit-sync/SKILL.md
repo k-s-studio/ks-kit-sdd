@@ -14,6 +14,7 @@ Do this:
 - If the repo is already in merge, rebase, or cherry-pick state, stop and report.
 - Stage all local changes.
 - Use the available git tooling for the actual add, diff, commit, pull, and push operations instead of hardcoding a shell command script.
+- Before committing, run `git config user.email` in the ks-sdd-kit directory to get the email that will be used for the push, and include it in the final report.
 - Generate one short commit message from the actual staged diff. Keep it specific and short, for example `Add <feature>`, `Update <feature>`, or `Refine <feature>`.
 - Commit only if there is something staged to commit.
 - Pull the latest `origin/main`, then push local `main` to `origin/main`.
