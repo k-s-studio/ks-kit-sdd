@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "ksx-kit": {
+      "source": {
+        "source": "directory",
+        "path": "c:\\_projects\\ks-kit-sdd"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ksx@ksx-kit": true
+  }
+}

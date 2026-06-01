@@ -1,0 +1,7 @@
+{
+  "name": "ks-kit-sdd",
+  "owner": { "name": "ks" },
+  "plugins": [
+    { "name": "ksx", "source": "./plugins/ksx" }
+  ]
+}
